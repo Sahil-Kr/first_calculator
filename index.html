@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>  
+    <body>
+        <div class="body">
+            <div >
+                <input class="text-field" id="text_field" disabled>
+            </div>
+        <div>
+            <button type="button" class="btn-num" id="btn_1" value="1" onclick="setText(document.getElementById('btn_1').value)">1</button>
+            <button type="button" class="btn-num" id="btn_2" value="2" onclick="setText(document.getElementById('btn_2').value)">2</button>
+            <button type="button" class="btn-num" id="btn_3" value="3" onclick="setText(document.getElementById('btn_3').value)">3</button>
+            <button type="button" class="btn-num" id="btn_add" value="+" onclick="setText(document.getElementById('btn_add').value)">+</button>
+        </div>
+        <div>
+            <button type="button" class="btn-num" id="btn_4" value="4" onclick="setText(document.getElementById('btn_4').value)">4</button>
+            <button type="button" class="btn-num" id="btn_5" value="5" onclick="setText(document.getElementById('btn_5').value)">5</button>
+            <button type="button" class="btn-num" id="btn_6" value="6" onclick="setText(document.getElementById('btn_6').value)">6</button>
+            <button type="button" class="btn-num" id="btn_min" value="-" onclick="setText(document.getElementById('btn_min').value)">-</button>
+        </div>
+        <div>
+            <button type="button" class="btn-num" id="btn_7" value="7" onclick="setText(document.getElementById('btn_7').value)">7</button>
+            <button type="button" class="btn-num" id="btn_8" value="8" onclick="setText(document.getElementById('btn_8').value)">8</button>
+            <button type="button" class="btn-num" id="btn_9" value="9" onclick="setText(document.getElementById('btn_9').value)">9</button>
+            <button type="button" class="btn-num" id="btn_mul" value="*" onclick="setText(document.getElementById('btn_mul').value)">*</button>
+        </div>
+        <div>
+            <button type="button" class="btn-num" id="btn_reset" value="AC" onclick="reset()">AC</button>
+            <button type="button" class="btn-num" id="btn_0" onclick="setText(document.getElementById('btn_1').value)">0</button>
+            <button type="button" class="btn-num" id="btn_div" value="/" onclick="setText(document.getElementById('btn_div').value)">/</button>
+            <button type="button" class="btn-num" id="btn_calc" value="=" onclick="calc()">=</button>
+        </div>
+        <div class="warning"><em>*use only one operator at a time.</em></div>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+
+</html>
